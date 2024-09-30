@@ -5,9 +5,6 @@ const schema = new mongoose.Schema({
   description: String,
 });
 
-/**
- * ("import("mongoose").model")
- */
-const model = new mongoose.model('note', schema);
+const model = mongoose.model('note', schema);
 
-module.exports = { model };
+module.exports = model;
